@@ -34,7 +34,7 @@ let myObj ={
 const myFunction = function(){
     console.log("hello world");
 }
-
+/*
 console.log(typeof anotherId);
 console.log(typeof userEmail);
 console.log(typeof outsideTemp);
@@ -46,3 +46,23 @@ console.log(typeof Array);
 console.log(typeof Object);
 console.log(typeof Object);
 
+*/
+
+// types of memorey - stack(Primitive), Heap(Non-Primitive)
+
+// we got copy in stack and refernce in heap
+let myGithubname = "CreateWithSam"
+let anotherName = myGithubname
+anotherName = "TheSamCodes"
+
+console.log(anotherName);
+console.log(myGithubname);
+
+let userOne = {
+    email: "sam@google.com",
+    upi: "sam@upi"
+}
+let userTwo = userOne
+userTwo.email = "theSam@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
